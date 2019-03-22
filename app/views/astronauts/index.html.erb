@@ -1,0 +1,8 @@
+<% @astronauts.each do |astronaut| %>
+  <p><%= astronaut.name %></p>
+  <p><%= astronaut.age %></p>
+  <p><%= astronaut.job %></p>
+  <% @astronauts.missions.each do |mission| %>
+    <p><%= mission.name %></p>
+  <% end %>
+<% end  %>
